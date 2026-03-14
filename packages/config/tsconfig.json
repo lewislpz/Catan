@@ -1,0 +1,7 @@
+{
+  "extends": "./tsconfig/node.json",
+  "compilerOptions": {
+    "noEmit": true
+  },
+  "include": ["vitest/**/*.ts", "eslint/**/*.cjs", "prettier/**/*.cjs"]
+}

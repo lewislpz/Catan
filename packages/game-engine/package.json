@@ -1,0 +1,21 @@
+{
+  "name": "@hexaforge/game-engine",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "dev": "tsup src/index.ts --watch --format esm --dts",
+    "build": "tsup src/index.ts --format esm --dts --clean",
+    "lint": "eslint src --ext .ts",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@hexaforge/shared": "workspace:*"
+  }
+}
