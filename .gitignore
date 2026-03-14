@@ -1,0 +1,76 @@
+# --- Local agent/runtime state (contains tokens, logs and local DBs) ---
+.codex/
+
+# --- Environment and secret files ---
+.env
+.env.*
+!.env.example
+!.env.sample
+!.env.template
+!.envrc.example
+
+# --- Generic secrets/credentials ---
+*.secret
+*.secrets
+*.token
+secret.*
+secrets.*
+credential.*
+credentials.*
+*_secret.*
+*_secrets.*
+*_credential.*
+*_credentials.*
+.npmrc
+.pypirc
+.netrc
+
+# --- Private keys and certificates ---
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+*.keystore
+*.crt
+*.cer
+*.der
+id_rsa
+id_rsa.*
+id_dsa
+id_dsa.*
+id_ecdsa
+id_ecdsa.*
+id_ed25519
+id_ed25519.*
+
+# --- Cloud and infra local credential artifacts ---
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+*.tfvars.json
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+.aws/
+.azure/
+.gcp/
+.kube/
+
+# --- Local databases, dumps and logs ---
+*.sqlite
+*.sqlite3
+*.db
+*.db-journal
+*.db-shm
+*.db-wal
+*.sql
+*.dump
+*.bak
+*.log
+
+# --- Security scan outputs ---
+*.sarif
+*.security.json
